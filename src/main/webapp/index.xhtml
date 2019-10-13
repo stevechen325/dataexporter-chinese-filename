@@ -10,14 +10,6 @@
     <h:body>
         <h:form>
             <p:dataTable id="tbl" var="car" value="#{dataExporterView.cars}" paginator="true" rows="10">
-                <f:facet name="{Exporters}">
-                    <div style="float:right;padding-top: 5px;">
-                        <h:commandLink value="xls">
-                            <p:dataExporter type="xls" target="tbl" fileName="中文檔名" />
-                        </h:commandLink>
-                    </div>
-                </f:facet>
-
                 <p:column>
                     <f:facet name="header">
                         <h:outputText value="Id" />
